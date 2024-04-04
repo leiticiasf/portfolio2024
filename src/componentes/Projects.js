@@ -89,7 +89,7 @@ return(
         <Row>
             <Col>
           
-          <h2>Projetos</h2>
+          <h2 id="projetos">Projetos</h2>
           <p>Jazem aqui as principais atividades ocorridas ao longo do ano</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
             <Nav variant="pills" className="nav-pills mb-5 justify-content-center alignt-items-center" id="pills-tab">

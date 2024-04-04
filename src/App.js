@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { DevCards } from './componentes/ProjectsCardsTech';
 import {Ppe} from "./componentes/Ppe";
 import {Final} from "./componentes/Final";
+import {Curriculo} from "./componentes/Curriculo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <Cards  />
     <DevProjects/>
     <DevCards/>
+    <Curriculo/>
     <Ppe/>
     <Final/>
     </div>
