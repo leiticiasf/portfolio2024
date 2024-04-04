@@ -43,14 +43,14 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#inicio" className={activeLink === "home" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Início</Nav.Link>
-            <Nav.Link href="#sobreMim" className={activeLink === "sobreMim" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('sobreMim')}>Sobre Mim</Nav.Link>
-            <Nav.Link href="#projetos" className={activeLink === "projetos" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projetos')}>Projetos</Nav.Link>
-            <Nav.Link href="#redesSociais" className={activeLink === "redesSociais" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('redesSociais')}>Redes Sociais</Nav.Link>
+            <Nav.Link href="#skills" className={activeLink === "skills" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Skills.js')}>Skills</Nav.Link>
+            <Nav.Link href="#projetos" className={activeLink === "projetos" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Projects.js')}>Projetos</Nav.Link>
+            <Nav.Link href="#curriculo" className={activeLink === "curriculo" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Curriculo.js')}>Currículo</Nav.Link>
           </Nav>
-          <span className="navbar-text">
+          <span className="navbar-text">  
             <div className="social-icon">
               <a href='https://github.com/leiticiasf'><img src={github} alt="github" /> </a>
-              <a href='#'><img src={linkedin} alt="linkedin" /> </a>
+              <a href='https://www.linkedin.com/in/let%C3%ADcia-soares-ferreira-b763a42b8/'><img src={linkedin} alt="linkedin" /> </a>
               <a href='#'><img src={pinterest} alt="pinterest" /> </a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')} >  <span> Conectando </span>  </button>

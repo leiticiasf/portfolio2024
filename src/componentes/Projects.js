@@ -76,7 +76,7 @@ export const Projects = () => { /* Parte Natureza*/
     const matematica = [
         {
             title: "Arcos e Ângulos",
-            description: "Produzimos um trilha dentro do ambiente da escola utilizando os conceitos de Arcos e Âgulos contando uma história por trás desta trilha.",
+            description: "Produzimos um trilha dentro do ambiente da escola utilizando os conceitos de Arcos e Âgulos contando uma história por trás desta trilha. Competências e habilidades: C2 -Reconhecer e utilizar a linguagem algébrica e suas representações como a linguagem das ciências, necessária para expressar a relação entre grandezas e criar modelos descritivos permitindo conexões da matemática, com em fenômenos, sistemas naturais e tecnológicos.H 5- Ler e interpretar diferentes linguagens e representações envolvendo variações de grandezas; H 16- Compreender e construir modelos que correspondem a fenômenos periódicos.   ",
             imgUrl: fotoAv1Mtm,
             link: "https://drive.google.com/file/d/12u5vl9DJyl-sXnJOfnOTBBAfvrZCsowM/view?usp=sharing"
         }

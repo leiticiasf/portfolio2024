@@ -3,7 +3,7 @@
  import fotoCalcReact from "../assets/tecnicoImg/calculadoraReact.png";
  import fotoCasoUML from "../assets/tecnicoImg/casoDeUso.png";
  import fotoPostman from "../assets/tecnicoImg/post.png";
-
+ import fotoCRM from "../assets/tecnicoImg/implantacao.png"
 export const DevProjects = () => { /* Parte Desenvolvimento de Sistemas*/
     const ads = [
         {
@@ -29,6 +29,13 @@ export const DevProjects = () => { /* Parte Desenvolvimento de Sistemas*/
         }                                                       
     ]
 
+    const ims = [
+        {
+            title: "CRM",
+            description: "Nesta atividade nós criamos um cronograma como uma equipe de Implantação para então iniciar um Projeto de Implantação do sistema CRM, ainda em Desenvolvimento, para que todas as atividades necessárias para a implantação fossem coordenadas pela nossa  equipe, garantindo que a implantação por módulos seja realizada com sucesso",
+            imgUrl: fotoCRM
+        }
+    ]
 
 
 return(
@@ -78,6 +85,20 @@ return(
                                     <DevCards 
                                     key={index}
                                     {...modelagem} />
+                                )
+                            })
+                        }
+                    </Row>
+                </Tab.Pane>
+
+                <Tab.Pane eventKey="ims">
+                    <Row>
+                        {
+                            ims.map((ims, index) => {
+                                return(
+                                    <DevCards 
+                                    key={index}
+                                    {...ims} />
                                 )
                             })
                         }

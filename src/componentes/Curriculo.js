@@ -12,7 +12,7 @@ export const Curriculo = () => {
 
     return(
         <div>
-             <div className='Curriculo'>
+             <div className='Curriculo' id="curriculo">
             <h2>Meu Currículo</h2>
             <br/>
             <img src={meuCurriculo} alt="Currículo" className='curriculo'/>
