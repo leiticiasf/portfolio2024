@@ -24,7 +24,7 @@ body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  
+  background-color: #193441 !important;
   color: #fff !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -255,7 +255,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 .banner{
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background: linear-gradient(#193441, #3E606F, #587581);;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -337,11 +336,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 .skill{
   padding: 0 0  50px 0;
   position: relative;
-  background: linear-gradient(#587581, #4d7383, #23566d);
 }
 
 .skills-bx{
-  background: #193441;
+  background: #254d61;
   border-radius: 65px;
   text-align: center;
   padding: 60px 50px;
@@ -379,7 +377,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 .project{
   padding: 80px 0;
   position: relative;
-  background: linear-gradient(#23566d, #183d4e, #0a2430);
 }
 
 .project h2{
@@ -479,7 +476,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 
 .proj-imgbx::before{
   content: "";
-  background: linear-gradient(#193441, #3E606F, #587581);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -526,7 +522,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 
 .Curriculo{
   text-align: center;
-  background:  linear-gradient(#193441, #3E606F, #587581) ;
 }
 .curriculo{
   margin-bottom: 20px;
@@ -548,7 +543,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   background-color: #445962;
 }
 .ppe{
-  background-color: #445962 ;
   border-top: 1px solid rgb(255, 255, 255);
 
 }
