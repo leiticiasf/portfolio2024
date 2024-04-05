@@ -13,14 +13,14 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
     const ads = [
         {
             title: "Calculadora de Horas",
-            description: "Neste trabalho nós fizemos uma calculadora de horas em React.",
+            description: "Neste trabalho nós fizemos uma calculadora de horas em React. Foi o meu primeiro contato com React, gostei bastante em aprender sobre esta biblioteca, se tornou preferível na hora de criar projetos.",
             imgUrl: fotoCalcReact,
             link: "https://github.com/leiticiasf/calculadoraReact",
             trimestre: "primeiro"
         },
         {
             title: "Postman",
-            description: "Primeiro contato com JAVA e Banco de Dados",
+            description: "Primeiro contato com JAVA e Banco de Dados. Mesmo sendo apenas o básico, gostei bastante, é uma linguagem bem regrada mas eu gosto de coisas assim, em que não tem meio termo.",
             imgUrl: fotoPostman,
             trimestre: "primeiro"
 
@@ -31,7 +31,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
     const modelagem = [
         {
             title:"Caso de Uso SA",
-            description: "Esta atividade tinha como requerimento que nós criássemos um diagrama UML que explicasse o funcionamento do nosso site da SA. ",  
+            description: "Esta atividade tinha como requerimento que nós criássemos um diagrama UML que explicasse o funcionamento do nosso site da SA. Foi um momento bem desesperador pensar nesse diagrama, mas conforme eu e meu grupo começamos a desenvolver, se tornou algo legal de fazer, exigiu uma parte da minha capacidade mental que eu venho buscando desenvolver a um tempo. ",  
             imgUrl: fotoCasoUML,
             link: "https://lucid.app/lucidchart/d44af6f0-98d9-4c0b-b85c-38a961aa19c7/edit?viewport_loc=-201%2C399%2C1993%2C789%2C0_0&invitationId=inv_17bc7a94-ccf2-4de0-af71-5722ce18cc03",  
             trimestre: "primeiro"
@@ -42,7 +42,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
     const ims = [
         {
             title: "CRM",
-            description: "Nesta atividade nós criamos um cronograma como uma equipe de Implantação para então iniciar um Projeto de Implantação do sistema CRM, ainda em Desenvolvimento, para que todas as atividades necessárias para a implantação fossem coordenadas pela nossa  equipe, garantindo que a implantação por módulos seja realizada com sucesso",
+            description: "Nesta atividade nós criamos um cronograma como uma equipe de Implantação para então iniciar um Projeto de Implantação do sistema CRM, ainda em Desenvolvimento, para que todas as atividades necessárias para a implantação fossem coordenadas pela nossa  equipe, garantindo que a implantação por módulos seja realizada com sucesso. Apesar de ser um trabalho extenso, gostei de ver a forma como são organizados os projetos no mundo real de trabalho.",
             imgUrl: fotoCRM,
             trimestre: "primeiro"
 
