@@ -60,13 +60,13 @@ return(
 
           <button className="trimestre" onClick={() => setSelectedTrimestre("primeiro")}>
             <span>1º Trimestre</span>
-            <div class="border full-rounded"></div></button>
+            </button>
             <button className="trimestre" onClick={() => setSelectedTrimestre("segundo")}>
             <span>2º Trimestre</span>
-            <div class="border full-rounded"></div></button>
+            </button>
             <button className="trimestre" onClick={() => setSelectedTrimestre("terceiro")}>
             <span>3º Trimestre</span>
-            <div class="border full-rounded"></div></button>
+            </button>
           <p>Jazem aqui as principais atividades ocorridas ao longo do ano</p>
 
             <Tab.Container id="projects-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
