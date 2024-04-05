@@ -471,7 +471,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   overflow: hidden;
   margin-bottom: 24px;
   
-  
 }
 
 .proj-imgbx::before{
@@ -485,6 +484,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 
 .proj-imgbx:hover::before{
   height: 100%;
+  background-color: #3a464d;
+
 }
 
 .proj-txtx{
@@ -546,6 +547,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   border-top: 1px solid rgb(255, 255, 255);
 
 }
+
+.trimestre{
+  font-weight: 700;
+  color: #d4f9fc;
+  border: 1px solid #D1DBBD;
+  border-radius: 50px;
+  border-style:dashed ;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.8s ease-in-out; 
+}
+.trimestre:hover{
+  background: linear-gradient(70deg, #193441, #349ad5 ) ;
+  letter-spacing: 0.8px;
+  border-style: double;
+
+}
+
 
 .App{
   text-align: center;
