@@ -10,6 +10,7 @@
  import fotoPost from "../assets/linguagensImg/conto.jpg";
  import fotoLivro from "../assets/linguagensImg/livro.jpg";
  import fotoAv1Mtm from "../assets/matematicaImg/Mapa.png";
+ import fotoRevista from "../assets/linguagensImg/revista.png"
 import React, { useState } from "react";
 
   
@@ -90,6 +91,15 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             description: "Escolhemos uma obra do período pré-modernista e fizemos uma apresentação sobre ela. Gostei de ver sobre as obras e o suas criações por trás, como essa em específica em que o autor estava internado em um hospital para alienados enquanto escrevia este romance.",
             imgUrl: fotoLivro,
             link: "https://www.canva.com/design/DAF-RUA3r9U/N0aYX2y9DmzXmZeRtIT3JA/edit?utm_content=DAF-RUA3r9U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            trimestre: "primeiro"
+
+            
+        },
+        {
+            title: "Revista Literária",
+            description: "Trabalhamos as obras literárias do vestibular da UFSC. O objetivo é que, para além de estarmos familizarizados com as obras do vestibular, que seja proporcionado o contato com a leitura, além de trabalharmos a interpretação textual, o estímulo ao senso crítico e habilidades de argumentação e produção de texto.",
+            imgUrl: fotoRevista,
+            link: "https://revistaliteraria.my.canva.site/",
             trimestre: "primeiro"
 
             
