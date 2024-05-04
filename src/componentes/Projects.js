@@ -22,14 +22,14 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
     const natureza = [
         {
             title: "Meme Evolucionismo",
-            description: "Nesta aula estudamos as ideias evolucionistas, os principais cientistas que trabalharam nessa área e alguns conceitos dentro do evolucionismo. Esta atividade foi uma forma de trazer os conceitos de evolucionismo de um ponto de vista satírico. Achei tranquilo de fazer, e me fez pensar um pouco sobre a humanidade e a definição de 'evolução'.",
+            description: "Nesta aula estudamos as ideias evolucionistas, os principais cientistas que trabalharam nessa área e alguns conceitos dentro do evolucionismo. Esta atividade foi uma forma de trazer os conceitos de evolucionismo de um ponto de vista satírico. Achei tranquilo de fazer, e me fez pensar um pouco sobre a humanidade e a definição de 'evolução'. Habilidades e Competências: C2 - H11",
             imgUrl: fotoMeme,
             link: "https://www.canva.com/design/DAF-u7idW64/JRRP6Lr7weS-WB_vzXKVFQ/edit?utm_content=DAF-u7idW64&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
             trimestre: "primeiro"
         },
         {
             title: "Revisão Química Orgânica",
-            description: "Fizemos uma apresentação sobre química orgânica para retomar o conhecimento de conteúdos já aprendidos, para refrescar a memória. Foi legal de fazer, fazer a pesquisa ajuda a lembrar de coisas que eu nem lembrava mais que existia.",
+            description: "Fizemos uma apresentação sobre química orgânica para retomar o conhecimento de conteúdos já aprendidos, para refrescar a memória. Foi legal de fazer, fazer a pesquisa ajuda a lembrar de coisas que eu nem lembrava mais que existia. Habilidades e Competências: C1 - H3, H4, H5",
             imgUrl: fotoOrganica,
             link: "https://docs.google.com/presentation/d/14Vx3aqsnkBRJZKg75W40nZ45MMyyvhsWnyX9g_DmrEs/edit?usp=classroom_web&authuser=0",
             trimestre: "primeiro"
@@ -37,7 +37,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
         },
         {
             title: "Circuitos e Resistores",
-            description: "O objetivo desta atividade prática era compreender e experimentar as diferenças entre circuitos de resistores em série e em paralelo, explorando como a resistência total é afetada em cada configuração. Foi uma atividade muito legal de fazer, um pouco trabalhosa mas valeu a pena, realmente deu para entender o conceito dos circuitos.",
+            description: "O objetivo desta atividade prática era compreender e experimentar as diferenças entre circuitos de resistores em série e em paralelo, explorando como a resistência total é afetada em cada configuração. Foi uma atividade muito legal de fazer, um pouco trabalhosa mas valeu a pena, realmente deu para entender o conceito dos circuitos. Habilidades e Competências: C2, C6 - H6, H34",
             imgUrl: fotoCircuito,
             link: "https://docs.google.com/document/d/1CV-GYZ9_vD-cs5GbQqaRbUw4TZKUeEzgbXZwvH4eo88/edit?usp=gmail",
             trimestre: "primeiro"
@@ -45,7 +45,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
         },
         {
             title: "Autoria",
-            description: "Anotações que fiz durante a aula sobre A Evolução e Teorias Evolucionistas. Um assunto bem legal, na minha opinião.",
+            description: "Anotações que fiz durante a aula sobre A Evolução e Teorias Evolucionistas. Um assunto bem legal, na minha opinião. Habilidades e Competências: C2 - H11",
             imgUrl: fotoAutoria, 
             link: "https://docs.google.com/document/d/1h5dyq6SbD9ZF4406HQ0Dt7itMWpMOrHRlOweCz0A2H0/edit?usp=drive_link",
             trimestre: "primeiro"
