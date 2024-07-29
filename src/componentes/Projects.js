@@ -69,7 +69,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
         },
         {
             title: "O Imperialismo na América",
-            description: "Esta atividade requereu que nós fizessémos a análise de uma determinada imagem dada durante a aula para refletirmos em sala.  ",
+            description: "Esta atividade pediu que nós fizessémos a análise de uma determinada imagem dada durante a aula para refletirmos em sala. Não tenho muito o que dizer sobre, pois foi uma atividade fácil de ser feita e que não demandou muito esforço, mas a aula expositiva foi legal. ",
             imgUrl: fotoPintura,
             link: "https://docs.google.com/document/d/1HN822HfWsRRpgmdv9IiM2XrpMgPL78rtLNoKDbVBUj0/edit?usp=classroom_web&authuser=0",
             trimestre: "primeiro"
@@ -134,7 +134,7 @@ return(
             <button className="trimestre" onClick={() => setSelectedTrimestre("terceiro")}>
             <span>3º Trimestre</span>
            </button>
-          <p>Jazem aqui as principais atividades ocorridas ao longo do ano</p>
+          <p>Principais atividades ocorridas ao longo do ano</p>
 
             <Tab.Container id="projects-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
 

@@ -67,7 +67,7 @@ return(
             <button className="trimestre" onClick={() => setSelectedTrimestre("terceiro")}>
             <span>3º Trimestre</span>
             </button>
-          <p>Jazem aqui as principais atividades ocorridas ao longo do ano</p>
+          <p>Principais atividades ocorridas ao longo do ano</p>
 
             <Tab.Container id="projects-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
             <Nav variant="pills" className="nav-pills mb-5 justify-content-center alignt-items-center" id="pills-tab">

@@ -1,6 +1,6 @@
-import carregamento from "../assets/photos/gifcarregando.gif"
-import cachorro from "../assets/photos/carr.png"
+import cardapio from "../assets/ppe/cardapio.jpg";
 
+import falarPublico from "../assets/ppe/certificado.jpg";
 
 export const Ppe = () => {
     return (
@@ -9,9 +9,9 @@ export const Ppe = () => {
         <span>
 
                 <h1>PPE</h1>
-                     <img id="gif" src={carregamento} alt="gif de carregamento" />  <br/> <br/>
-
-                    <p>  Estamos trabalhando nisto...</p> &nbsp; <img id="cachorro" src={cachorro} alt="cachorro olhando de lado" />  <br/> <br/>
+                  
+                    <img id="aa" src={falarPublico} /> &nbsp;
+                    <img id="aa" src={cardapio} />
 
                     </span>
                     </div>

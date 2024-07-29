@@ -55,7 +55,6 @@ export const NavBar = () => {
               <a href='https://www.linkedin.com/in/let%C3%ADcia-soares-ferreira-b763a42b8/'><img src={linkedin} alt="linkedin" /> </a>
               <a href='#'><img src={pinterest} alt="pinterest" /> </a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')} >  <span> Conectando </span>  </button>
           </span>
         </Navbar.Collapse>
       </Container>

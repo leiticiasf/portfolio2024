@@ -114,14 +114,13 @@ span.navbar-text {
 .social-icon a{
   width: 60px;
   height: 60px;
-  background: #3E606F;
+  background: #193441;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgb(105, 105, 105);
 }
 
 .social-icon a::before{
@@ -129,7 +128,7 @@ span.navbar-text {
   width: 60px;
   height: 60px;
   position: absolute;
-  background-color: #91AA9D;
+  background-color: #314853;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -265,7 +264,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background-color: #5b7d8a69;
-  border: 1px solid rgba(196, 196, 196, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -375,7 +373,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 
 /* CSS PROJECTS */
 .project{
-  padding: 80px 0;
+  padding: 90px 0;
   position: relative;
 }
 
@@ -396,73 +394,56 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 }
 
 .project .nav.nav-pills {
-  width: 72%;
+  width: 70%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255, 255, 255 / 10%);
+  background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 
-.project .nav.nav-pills .nav-item{
-  width: 50%;
-}
 
-.project .nav.nav-pills .nav-link{
-  background-color:#183d4e;
-  border-radius: 4;
-  padding: 20px ;
-  color: #ffffff;
+.project .nav.nav-pills .nav-item {
+  width: 20%;
+}
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  padding: 17px 0;
+  color: #fff;
   width: 100%;
   font-size: 17px;
-  letter-spacing: 3px;
+  letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
-  transition: 1s ease-in-out;
+  transition: 0.9s ease-in-out;
   text-align: center;
+  z-index: 0;
+}
+.project .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 90%;
+    background: linear-gradient(90.21deg, #3E606F -5.91%, #193441 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.9s ease-in-out;
 }
 
 
-.project .nav.nav-pills .nav-link::before{
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: 0.4s ease-in-out;
-}
-
-.project .nav.nav-pills .nav-link.active::before{
-  width: 100% !important;
-
+.project .nav.nav-pills .nav-link.active {
+  color: #84a3b1;
 
 }
 
-.project .nav.nav-pills .nav-link.active{
-  border: 1px solid rgb(8, 59, 117);
-  background-color: #91AA9D;
-  letter-spacing: 7px;
-
-
+.nav-link#projects-tabs-tab-first {
+  border-radius: 70px 0px 0px 55px;
 }
-
-.nav-link#projects-tabs-tab-natureza{
-  border: 1px solid rgba(167, 182, 204, 0.5);
-  border-radius: 55px, 0px, 0px, 55px;
-}
-
-.nav-link#projects-tabs-tab-matematica{
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+.nav-link#projects-tabs-tab-second {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.nav-link#projects-tabs-tab-humanas{
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-linguagens{
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+.nav-link#projects-tabs-tab-third {
+  border-radius: 0 55px 55px 0;
 }
 
 .proj-imgbx{
@@ -551,9 +532,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 .trimestre{
   font-weight: 700;
   color: #d4f9fc;
-  border: 1px solid #D1DBBD;
   border-radius: 50px;
-  border-style:dashed ;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -620,4 +599,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   }
 }
 
-
+#aa{
+  width: 40%;
+  height: auto;
+}
