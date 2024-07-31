@@ -603,3 +603,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   width: 40%;
   height: auto;
 }
+
+.image-zoom {
+  display: block;
+  width: 400px;
+  height: auto;
+
+}
+
+.image-zoom-container {
+  background-size: 200%;
+  background-repeat: no-repeat;
+  transition: background-position 0.1s ease;
+}
+
+.image-zoom-container:hover .image-zoom {
+  opacity: 1;
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import github from '../assets/img/GitHubIcon.svg';
-import linkedin from '../assets/img/LinkedInIcon.svg';
+import linkedin from '../assets/img/LinkedInIcon.png';
 import pinterest from '../assets/img/PinterestIcon.svg';
 import desenhoLeticia from '../assets/photos/eu.png';
 
