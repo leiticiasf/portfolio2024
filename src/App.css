@@ -359,6 +359,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 
 }
 
+
+.skill-slider .item:hover img {
+  transform: scale(1.9);
+}
+
 .skill-slider{
   width: 88%;
   margin: 0 auto;
@@ -366,8 +371,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 }
 
 .skill-slider .item img {
-  width: 50%;
+  width: 90%;
   margin: 0 auto 15px auto;
+  transition: transform 0.3s ease;
+
 
 }
 
@@ -604,19 +611,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   height: auto;
 }
 
-.image-zoom {
-  display: block;
-  width: 400px;
-  height: auto;
-
-}
-
-.image-zoom-container {
-  background-size: 200%;
-  background-repeat: no-repeat;
-  transition: background-position 0.1s ease;
-}
-
-.image-zoom-container:hover .image-zoom {
-  opacity: 1;
-}

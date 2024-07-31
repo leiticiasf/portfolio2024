@@ -22,8 +22,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             title: "Postman",
             description: "Primeiro contato com JAVA e Banco de Dados. Mesmo sendo apenas o básico, gostei bastante, é uma linguagem bem regrada mas eu gosto de coisas assim, em que não tem meio termo.",
             imgUrl: fotoPostman,
-            trimestre: "primeiro"
-
+  
         },
    
     ];      
