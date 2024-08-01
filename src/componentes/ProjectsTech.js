@@ -3,8 +3,15 @@
  import fotoCalcReact from "../assets/tecnicoImg/calculadoraReact.png";
  import fotoCasoUML from "../assets/tecnicoImg/casoDeUso.png";
  import fotoPostman from "../assets/tecnicoImg/post.png";
- import fotoCRM from "../assets/tecnicoImg/implantacao.png"
+ import fotoCRM from "../assets/tecnicoImg/implantacao.png";
  import React, {useState} from "react";
+ import fotoScrum from '../assets/tecnicoImg/scrum.png';
+ import fotoWire from "../assets/tecnicoImg/A.png";
+ import fotoRN from "../assets/tecnicoImg/regra.png";
+ import fotoModelo from "../assets/tecnicoImg/ha.jpg";
+ import fotoConsultorio from "../assets/tecnicoImg/macaco.jpg";
+
+
 export const DevProjects = () => { /* Parte Desenvolvimento de Sistemas*/
 
 const [selectedCategory, setSelectedCategory] = useState("null");
@@ -35,6 +42,13 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             link: "https://lucid.app/lucidchart/d44af6f0-98d9-4c0b-b85c-38a961aa19c7/edit?viewport_loc=-201%2C399%2C1993%2C789%2C0_0&invitationId=inv_17bc7a94-ccf2-4de0-af71-5722ce18cc03",  
             trimestre: "primeiro"
 
+        },
+        {
+            title: "Sala de Aula Invertida",
+            description: "Nesta atividade nós fizemos uma pesquisa e subsequentemente uma apresentação sobre a metodologia ágil Scrum.",
+            imgUrl: fotoScrum,
+            link: "https://www.canva.com/design/DAGEpe-s3zU/ilPXCnEmUQGxjF4yp54g8Q/edit?utm_content=DAGEpe-s3zU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            trimestre: "segundo"
         }                                                       
     ]
 
@@ -45,6 +59,42 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             imgUrl: fotoCRM,
             trimestre: "primeiro"
 
+        }
+
+    ]
+
+    const sa = [
+        {
+            title: "Wireframe de Alta Fidelidade",
+            description: "Neste trabalho nós fizemos um Wireframe de alta fidelidade através do Figma para evidenciar como será a nossa SA.",
+            imgUrl: fotoWire,
+            trimestre: "segundo",
+            link: "https://www.figma.com/file/Wx6TaYUznXaQeT8DZkTBpd/SA?type=design&node-id=3%3A3486&mode=design&t=fwKNayewsEe16n0Y-1&authuser=0"
+        },
+        {
+            title: "Regra de Negócio",
+            description: "Regras de Negócio que eu e meu grupo fizemos para a funcionalidade do nosso projeto.",
+            imgUrl: fotoRN,
+            trimestre: "segundo",
+            link: "https://docs.google.com/spreadsheets/d/1Lmv_rOQ_AbbuXhSJMDOJ1NSITgQ_3i6zTWKemffC8lc/edit?usp=sharing"    
+        }
+    ]
+
+    const bancoDeDados = [
+        {
+            title: "Modelo Lógico",
+            description: "Lista de exercícios do Modelo Lógico",
+            imgUrl: fotoModelo,
+            trimestre: "segundo",
+            link: "https://docs.google.com/document/d/1QDNa8Is6XvfyGJvs4G8twBQ_Fyhruf4sWzO0LGz59Fc/edit?usp=sharing"
+        },
+
+        {
+            title: "Gestão de Consultório",
+            description: "Modelo lógico e conceitual construídos a partir de um enunciado de um consultório médico",
+            imgUrl: fotoConsultorio,
+            trimestre: "segundo",
+            link: "https://docs.google.com/document/d/1QDNa8Is6XvfyGJvs4G8twBQ_Fyhruf4sWzO0LGz59Fc/edit?usp=sharing"
         }
     ]
 
@@ -80,6 +130,9 @@ return(
                     <Nav.Link eventKey="modelagem" > Modelagem de Sistemas</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
+                    <Nav.Link eventKey="bancoDeDados" >Banco de Dados</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
                     <Nav.Link eventKey="sa" > SA </Nav.Link>
                 </Nav.Item>
               
@@ -104,6 +157,31 @@ return(
                                     <DevCards 
                                     key={index}
                                     {...modelagem} />
+                                ))}
+                            
+                        
+                    </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="bancoDeDados">
+                    <Row>
+                        {selectedCategory === "bancoDeDados" &&
+                           bancoDeDados.filter(bancoDeDados => bancoDeDados.trimestre === selectedTrimestre).map((bancoDeDados, index) => (
+                                    <DevCards 
+                                    key={index}
+                                    {...bancoDeDados} />
+                                ))}
+                            
+                        
+                    </Row>
+                </Tab.Pane>
+
+                <Tab.Pane eventKey="sa">
+                    <Row>
+                        {selectedCategory === "sa" &&
+                           sa.filter(sa => sa.trimestre === selectedTrimestre).map((sa, index) => (
+                                    <DevCards 
+                                    key={index}
+                                    {...sa} />
                                 ))}
                             
                         
