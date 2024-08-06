@@ -10,16 +10,26 @@
  import fotoPost from "../assets/linguagensImg/conto.jpg";
  import fotoLivro from "../assets/linguagensImg/livro.jpg";
  import fotoAv1Mtm from "../assets/matematicaImg/Mapa.png";
- import fotoRevista from "../assets/linguagensImg/revista.png"
+ import fotoRevista from "../assets/linguagensImg/revista.png";
+ import fotoRelacoes from "../assets/naturezaImg/relacoesEcologicas.png";
+ import fotoCircuitosEletricos from "../assets/naturezaImg/circuitos.png";
+ import fotoCartaz from "../assets/naturezaImg/cartaz.png";
+ import fotoXilocaina from "../assets/naturezaImg/xilo.png";
+ import fotoFilmeQ from "../assets/matematicaImg/filmeQ.jpg";
+ import fotoMonopoly from "../assets/matematicaImg/Tabuleiro.png";
+
+
 import React, { useState } from "react";
 
   
 export const Projects = () => { /* Parte Natureza*/
 
 const [selectedCategory, setSelectedCategory] = useState("null");
-const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
+const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo");
+
 
     const natureza = [
+        //primeiro trimestre
         {
             title: "Meme Evolucionismo",
             description: "Nesta aula estudamos as ideias evolucionistas, os principais cientistas que trabalharam nessa área e alguns conceitos dentro do evolucionismo. Esta atividade foi uma forma de trazer os conceitos de evolucionismo de um ponto de vista satírico. Achei tranquilo de fazer, e me fez pensar um pouco sobre a humanidade e a definição de 'evolução'. Habilidades e Competências: C2 - H11",
@@ -51,7 +61,40 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             trimestre: "primeiro"
 
         },
+
+        //segundo trimestre
+        {
+            title: "Relações Ecológicas",
+            description: " Atende C3 com as habilidades H15 e H18. Nesta atividade fizemos uma revista online que retrata sobre as principais relações ecológicas existentes,  tais como: Comensalismo, colônia, predação... entre outros. Cada página da revista tinha a descrição da relação e seu respectivos animais presentes. Achei uma atividade divertida e tranquila de ser feita, cada página fizemos de forma diferentem, o que possiblitou muito em exercitar o lado criativo.",
+            link: "https://www.canva.com/design/DAGGmwXorXw/XWGz5PiC6Fc0HcJx20PuMQ/edit?utm_content=DAGGmwXorXw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            imgUrl: fotoRelacoes,
+            trimestre: "segundo"
+        },
+        {
+            title: "Circuitos Elétricos",
+            description: "Aula sobre Componentes dos Circuitos - Nessa aula estudamos sobre os componentes de circuitos, como capacitores, receptores e geradores, e com isso atendemos a competência 6, habilidade 35. Fizemos um mapa mental como atividade, pessoalmente não gostei muito de fazer, não acho que tenha me ajudado a fixar o conteúdo.",
+            link: "https://www.canva.com/design/DAGEozNPYZk/h6cJLcFbSQqI7QWo_8EJZA/edit?utm_content=DAGEozNPYZk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            imgUrl: fotoCircuitosEletricos,
+            trimestre: "segundo"
+        },
+        {
+            title: "Cartaz Uso de Plásticos",
+            description: " C3 - H15 e H18. Nesta aula refletimos sobre o uso do plástico na nossa sociedade e como o mal descarte é catastrófico para o mundo. Fizemos cartazes e espalhamos pela escola. Foi uma atividade divertida e legal de fazer, gostei de poder escolher uma figura pro cartaz. ",
+            imgUrl: fotoCartaz,
+            trimestre: "segundo"
+        },
+        {
+            title: "Autoria - Apresentação Xilocaína",
+            description: "Atendendo a C3 - H15, H18 e C4 H23, nesta aula estudamos sobre os grupos funcionais e sorteamos uma substância para fazer uma apresentação em sala de aula sobre ela. Gostei de montar a apresentação, e achei que foi uma forma efetiva de aprender sobre a substância selecionada, já que tivemos que ler tudo o que foi colocado na apresentação para saber o que falar para a turma. ",
+            link: "https://www.canva.com/design/DAGHQmgqtf0/RqO-sbbRCxF4B1pHaVDjjA/edit?utm_content=DAGHQmgqtf0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",   
+            imgUrl: fotoXilocaina,
+            trimestre: "segundo"
+        }
     ];
+
+
+
+                            // humanas
     const humanas = [
         {
             title: "Review Filme 1917",
@@ -69,7 +112,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
         },
         {
             title: "O Imperialismo na América",
-            description: "Esta atividade pediu que nós fizessémos a análise de uma determinada imagem dada durante a aula para refletirmos em sala. Não tenho muito o que dizer sobre, pois foi uma atividade fácil de ser feita e que não demandou muito esforço, mas a aula expositiva foi legal. ",
+            description: "Esta atividade requereu que nós fizessémos a análise de uma determinada imagem dada durante a aula para refletirmos em sala.  ",
             imgUrl: fotoPintura,
             link: "https://docs.google.com/document/d/1HN822HfWsRRpgmdv9IiM2XrpMgPL78rtLNoKDbVBUj0/edit?usp=classroom_web&authuser=0",
             trimestre: "primeiro"
@@ -77,6 +120,10 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
         },
        
     ];
+
+
+
+    // linguagens
     const linguagens = [
     
         {
@@ -105,6 +152,9 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             
         }
     ]
+
+
+    // matematica
     const matematica = [
         {
             title: "Arcos e Ângulos",
@@ -113,6 +163,20 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             link: "https://drive.google.com/file/d/12u5vl9DJyl-sXnJOfnOTBBAfvrZCsowM/view?usp=sharing",
             trimestre: "primeiro"
 
+        },
+        {
+            title: "Filme Quebrando a Banca",
+            description: "Nesta atividade nós assistimos um filme chamado Quebrando a Banca como uma pré-visualização do próximo assunto que íamos estudar. A ativadade consitia em um questionário com perguntas sobre o filme. Achei uma aula legal, bem tranquila, foi bom para tirar o estresse do primeiro trimestre.",
+            imgUrl: fotoFilmeQ,
+            link: "https://docs.google.com/document/d/1SI-KCZxema2XyN02-8tOr4Tbw-7zEImarrEZpFraI2I/edit?usp=classroom_web&authuser=0",
+            trimestre: "segundo"
+        },
+        {
+            title: "Ilha da Riqueza",
+            description: "Nesta atividade nós desenvolvemos um jogo baseado em Banco Imobiliário so que 'Manézinho', por assim dizer. Todos os elementos presentes foram baseados em elementos da ilha de Florianópolis. Esta atividade envolvia C5 - Aplicar o pensamento probabilístico para quantificar e fazer previsões em situações  aplicadas a diferentes  áreas do conhecimento e da vida cotidiana, H30 - Identificar dados, regularidades e relações numa situação que envolva o  raciocínio combinatório, utilizando os processos de contagem, H31- Reconhecer fenômenos e eventos (naturais, científicos, tecnológicos e/ou  sociais) de caráter aleatório, compreendendo o significado e a importância da  probabilidade como meio de prever resultados, H32- Identificar em diferentes áreas científicas e outras atividades práticas modelos e problemas que fazem uso de estatísticas e probabilidades. Foi uma atividade legal de desenvolver e divertida. ",
+            imgUrl: fotoMonopoly,
+            link: "https://www.canva.com/design/DAGJ_FQZHBM/P2Fzx4CF7fq-YkgKH5zlDg/edit?utm_content=DAGJ_FQZHBM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton&authuser=0",
+            trimestre: "segundo"
         }
     ]
 
@@ -134,7 +198,7 @@ return(
             <button className="trimestre" onClick={() => setSelectedTrimestre("terceiro")}>
             <span>3º Trimestre</span>
            </button>
-          <p>Principais atividades ocorridas ao longo do ano</p>
+          <p>Jazem aqui as principais atividades ocorridas ao longo do ano</p>
 
             <Tab.Container id="projects-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
 
