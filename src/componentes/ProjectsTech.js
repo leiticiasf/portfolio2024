@@ -52,7 +52,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             title: "Projeto Biblioteca",
             description: "Este projeto foi uma criação de um backend para uma biblioteca. Atividade super estressante porém muito útil para ampliar os conhecimentos sobre criação e manutenção de um banco de dados.",
             imgUrl: fotoBiblioteca,
-            link: "https://drive.google.com/drive/folders/1oAWZsoslRgQwDcJ5uFvvvS5_dcOYzt3d?usp=drive_link",
+            link: "https://drive.google.com/file/d/17fq3GSw-3SLF5I6m6WuvCU549GmraFTx/view?usp=drive_link",
             trimestre: "segundo"
         }
 
