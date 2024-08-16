@@ -17,6 +17,10 @@
  import fotoXilocaina from "../assets/naturezaImg/xilo.png";
  import fotoFilmeQ from "../assets/matematicaImg/filmeQ.jpg";
  import fotoMonopoly from "../assets/matematicaImg/Tabuleiro.png";
+ import fotoCorcovado from "../assets/humanasImg/corcovado.jpg";
+ import fotoGru from "../assets/humanasImg/gru.jpg";
+ import fotoRedacao from "../assets/linguagensImg/redacao.png";
+
 
 
 import React, { useState } from "react";
@@ -118,7 +122,22 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
             trimestre: "primeiro"
 
         },
-       
+        // segundo trimestre 
+        {
+            title: "História do Corcovado",
+            description: "Nesta atividade nós tínhamos que entrar no banco de dados Brasiliana Fotográfica, mantido pela Biblioteca Nacional, e escolher cinco imagens que juntas são capazes de contar características do começo do século XX. Minha escolha foi imagens de morro Corcovado. Competências e habilidades: C4 H22 H24. \n Foi uma atividade tranquila e interessante de ser feita, mais pela exploração do site do que pelo tema escolhido.",
+            link: "https://www.canva.com/design/DAGJDjj2AfM/Z4Rn8GFgt2SlERIGQuax7Q/edit?utm_content=DAGJDjj2AfM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            imgUrl: fotoCorcovado,
+            trimestre: "segundo",
+        },
+        {
+            title: "Regimes Totalitaristas",
+            description: "Escolhemos o filme Meu Malvado Favorito para fazer uma reflexão sobre os regime totalitário e suas práticas. E então elaboramos uma breve apresentação sobre ele  apontando cenas, trechos, falas e comportamentos que demonstrem as características e o funcionamento dos regimes totalitários. Competências e habilidades: C2 H10 C6 H39. Essa atividade foi de fato divertida e interessante, nos trouxe uma reflexão sobre os outros filmes apresentados pelos nossos colegas, foi muito curioso.",
+            link: "https://www.canva.com/design/DAGHFl5qYiI/YgnHFi7nQdiZsi0EWfXUAw/edit?utm_content=DAGHFl5qYiI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            imgUrl: fotoGru,
+            trimestre: "segundo",
+        }
+    
     ];
 
 
@@ -144,10 +163,17 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
         },
         {
             title: "Revista Literária",
-            description: "Trabalhamos as obras literárias do vestibular da UFSC. O objetivo é que, para além de estarmos familizarizados com as obras do vestibular, que seja proporcionado o contato com a leitura, além de trabalharmos a interpretação textual, o estímulo ao senso crítico e habilidades de argumentação e produção de texto.",
+            description: "Trabalhamos as obras literárias do vestibular da UFSC. Para além de estarmos familizarizados com as obras do vestibular, que seja proporcionado o contato com a leitura, além de trabalharmos a interpretação textual, o estímulo ao senso crítico e habilidades de argumentação e produção de texto.",
             imgUrl: fotoRevista,
             link: "https://revistaliteraria.my.canva.site/",
             trimestre: "primeiro"
+        },
+        {
+            title: "Redação Online",
+            description: "Nota da redação online deste trimestre. Tema: Valorização dos profissionais da educação básica pública e seu impacto na qualidade do ensino. Clique para abrir a imagem em uma nova guia e visualizá-la melhor.",
+            imgUrl: fotoRedacao,
+            link: "https://lh3.googleusercontent.com/drive-storage/AJQWtBN33oRgxYEzC8nE_H_wKDxY2TRzMemJiTJJkeSar9v9cTCN9fznfwJh_9P3t51PXkryidSPEfUhjL2LVa4bcPLj9OUY8IX3kjlILFq1J06qeQ=w1920-h912",
+            trimestre: "segundo"
 
             
         }
@@ -198,7 +224,7 @@ return(
             <button className="trimestre" onClick={() => setSelectedTrimestre("terceiro")}>
             <span>3º Trimestre</span>
            </button>
-          <p>Jazem aqui as principais atividades ocorridas ao longo do ano</p>
+          <p>As principais atividades ocorridas ao longo do ano</p>
 
             <Tab.Container id="projects-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
 

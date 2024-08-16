@@ -8,9 +8,12 @@
  import fotoScrum from '../assets/tecnicoImg/scrum.png';
  import fotoWire from "../assets/tecnicoImg/A.png";
  import fotoRN from "../assets/tecnicoImg/regra.png";
- import fotoModelo from "../assets/tecnicoImg/ha.jpg";
- import fotoConsultorio from "../assets/tecnicoImg/macaco.jpg";
-
+ import fotoModelo from "../assets/tecnicoImg/gus.jpg";
+ import fotoGit from "../assets/tecnicoImg/git.jpg";
+ import fotoNavigate from "../assets/tecnicoImg/navigate.jpg";
+ import fotoBiblioteca from "../assets/tecnicoImg/biblio.jpg";
+ import fotoNormalizacao from "../assets/tecnicoImg/normalizacao.jpg";
+ import fotoConsultorio from "../assets/tecnicoImg/medico.jpg";
 
 export const DevProjects = () => { /* Parte Desenvolvimento de Sistemas*/
 
@@ -28,10 +31,32 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
         {
             title: "Postman",
             description: "Primeiro contato com JAVA e Banco de Dados. Mesmo sendo apenas o básico, gostei bastante, é uma linguagem bem regrada mas eu gosto de coisas assim, em que não tem meio termo.",
-            imgUrl: fotoPostman,
-  
+            imgUrl:fotoPostman,
+            trimestre: "primeiro"
         },
-   
+        {
+            title: "API GitHub",
+            description: "API que desenvolvemos em sala de aula que faz a busca de um usuário do GitHub. Habilidades: H3, H4, H5, H6, H9 E H10. ",
+            imgUrl: fotoGit,
+            link: "https://github.com/leiticiasf/API.git",
+            trimestre: "primeiro"
+        },
+        {
+            title: "Paginação com useNavigate",
+            description: "Paginando uma aplicação React.",
+            imgUrl: fotoNavigate,
+            link: "https://github.com/leiticiasf/paginasReact.git",
+            trimestre: "primeiro"
+        },
+        {
+            title: "Projeto Biblioteca",
+            description: "Este projeto foi uma criação de um backend para uma biblioteca. Atividade super estressante porém muito útil para ampliar os conhecimentos sobre criação e manutenção de um banco de dados.",
+            imgUrl: fotoBiblioteca,
+            link: "https://drive.google.com/drive/folders/1oAWZsoslRgQwDcJ5uFvvvS5_dcOYzt3d?usp=drive_link",
+            trimestre: "segundo"
+        }
+
+
     ];      
     
     const modelagem = [
@@ -45,11 +70,13 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
         },
         {
             title: "Sala de Aula Invertida",
-            description: "Nesta atividade nós fizemos uma pesquisa e subsequentemente uma apresentação sobre a metodologia ágil Scrum.",
+            description: "Nesta atividade nós fizemos uma pesquisa e subsequentemente uma apresentação sobre a metodologia ágil Scrum. Habilidades: H3, H5 e H8",
             imgUrl: fotoScrum,
             link: "https://www.canva.com/design/DAGEpe-s3zU/ilPXCnEmUQGxjF4yp54g8Q/edit?utm_content=DAGEpe-s3zU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
             trimestre: "segundo"
-        }                                                       
+        },
+    
+
     ]
 
     const ims = [
@@ -66,14 +93,14 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
     const sa = [
         {
             title: "Wireframe de Alta Fidelidade",
-            description: "Neste trabalho nós fizemos um Wireframe de alta fidelidade através do Figma para evidenciar como será a nossa SA.",
+            description: "Neste trabalho nós fizemos um Wireframe de alta fidelidade através do Figma para evidenciar como será a nossa SA. Habilidades: H2, H3, H4 E H5",
             imgUrl: fotoWire,
             trimestre: "segundo",
             link: "https://www.figma.com/file/Wx6TaYUznXaQeT8DZkTBpd/SA?type=design&node-id=3%3A3486&mode=design&t=fwKNayewsEe16n0Y-1&authuser=0"
         },
         {
             title: "Regra de Negócio",
-            description: "Regras de Negócio que eu e meu grupo fizemos para a funcionalidade do nosso projeto.",
+            description: "Regras de Negócio que eu e meu grupo fizemos para a funcionalidade do nosso projeto da SA. Habilidades: H2, H3, H4 e H8",
             imgUrl: fotoRN,
             trimestre: "segundo",
             link: "https://docs.google.com/spreadsheets/d/1Lmv_rOQ_AbbuXhSJMDOJ1NSITgQ_3i6zTWKemffC8lc/edit?usp=sharing"    
@@ -83,7 +110,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
     const bancoDeDados = [
         {
             title: "Modelo Lógico",
-            description: "Lista de exercícios do Modelo Lógico",
+            description: "Lista de exercícios do Modelo Lógico. Habilidades: H1 e H2.",
             imgUrl: fotoModelo,
             trimestre: "segundo",
             link: "https://docs.google.com/document/d/1QDNa8Is6XvfyGJvs4G8twBQ_Fyhruf4sWzO0LGz59Fc/edit?usp=sharing"
@@ -91,10 +118,17 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
 
         {
             title: "Gestão de Consultório",
-            description: "Modelo lógico e conceitual construídos a partir de um enunciado de um consultório médico",
+            description: "Modelo lógico e conceitual construídos a partir de um enunciado de um consultório médico.  Habilidades: H1 e H2.",
             imgUrl: fotoConsultorio,
             trimestre: "segundo",
             link: "https://docs.google.com/document/d/1QDNa8Is6XvfyGJvs4G8twBQ_Fyhruf4sWzO0LGz59Fc/edit?usp=sharing"
+        },
+        {
+            title: "Pesquisa de Normalização de Dados",
+            description: "Nesta aula nós fizemos uma pesquisa como introdução ao assunto Normalização de Dados. Habilidade: H3.",
+            imgUrl: fotoNormalizacao,
+            trimestre: "segundo",
+            link: "https://docs.google.com/document/d/1YpMS05YWqCsxd0jJHueWQMHzQR-o_jBhtlmJdXU9dvE/edit?usp=sharing"
         }
     ]
 

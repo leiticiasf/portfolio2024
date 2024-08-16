@@ -14,7 +14,7 @@ export const DevCards = ({title, description, imgUrl, link}) =>{
             <img src={imgUrl} />
             <div className='proj-txtx'>
                 <h4>{title}</h4>
-                <span>{description}</span>
+                <span>{description}</span> 
             </div>
         </div>
        </Col>
