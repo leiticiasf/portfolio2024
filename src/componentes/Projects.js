@@ -20,6 +20,10 @@
  import fotoCorcovado from "../assets/humanasImg/corcovado.jpg";
  import fotoGru from "../assets/humanasImg/gru.jpg";
  import fotoRedacao from "../assets/linguagensImg/redacao.png";
+ import fotoPoema from "../assets/linguagensImg/gatolendo.jpg";
+ import fotoMaquete from "../assets/linguagensImg/maquete.jpg";
+
+
 
 
 
@@ -173,9 +177,20 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
             description: "Nota da redação online deste trimestre. Tema: Valorização dos profissionais da educação básica pública e seu impacto na qualidade do ensino. Clique para abrir a imagem em uma nova guia e visualizá-la melhor.",
             imgUrl: fotoRedacao,
             link: "https://lh3.googleusercontent.com/drive-storage/AJQWtBN33oRgxYEzC8nE_H_wKDxY2TRzMemJiTJJkeSar9v9cTCN9fznfwJh_9P3t51PXkryidSPEfUhjL2LVa4bcPLj9OUY8IX3kjlILFq1J06qeQ=w1920-h912",
+            trimestre: "segundo"   
+        },
+        {
+            title: "Poema",
+            description: "Poema confeccionado em sala de aula referente ao livro Solitária.",
+            imgUrl: fotoPoema,
+            link: "https://docs.google.com/document/d/1v20WhbjqvW36DMxb-p04CLDy89bZMcWdjCESfj87gNc/edit?usp=sharing",
             trimestre: "segundo"
-
-            
+        },
+        {
+            title: "Maquete",
+            description: "Maquete feita para ilustrar uma cena do livro Solitária. A cena em questão seria supostamente quando a mãe de Mabel morre dormindo ao lado de sua filha e neta. ",
+            imgUrl: fotoMaquete,
+            trimestre: "segundo"
         }
     ]
 
