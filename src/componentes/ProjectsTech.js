@@ -14,6 +14,9 @@
  import fotoBiblioteca from "../assets/tecnicoImg/biblio.jpg";
  import fotoNormalizacao from "../assets/tecnicoImg/normalizacao.jpg";
  import fotoConsultorio from "../assets/tecnicoImg/medico.jpg";
+ import fotoBiblio from "../assets/tecnicoImg/cato.jpg";
+ import fotoPg from "../assets/tecnicoImg/elephant.jpg";
+ import fotoExpress from "../assets/tecnicoImg/express.jpg";
 
 export const DevProjects = () => { /* Parte Desenvolvimento de Sistemas*/
 
@@ -129,6 +132,30 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             imgUrl: fotoNormalizacao,
             trimestre: "segundo",
             link: "https://docs.google.com/document/d/1YpMS05YWqCsxd0jJHueWQMHzQR-o_jBhtlmJdXU9dvE/edit?usp=sharing"
+        },
+        {
+            title: "Biblioteca",
+            description: "H5",
+            imgUrl: fotoBiblio,
+            trimestre: "terceiro", 
+            link: "https://docs.google.com/document/d/1qmB05BcjmlDs-z1wuqzbVAb1khtpAVf6CWev8rkw--s/edit?usp=sharing"
+        },
+        {
+            title: "Left e Right Join no PgAdmin",
+            description: "H4 e H5",
+            imgUrl: fotoPg,
+            trimestre: "terceiro",
+            link: "https://drive.google.com/file/d/1n4TfhVE38a4bGYAShmG0XjBbrHedHq7c/view?usp=sharing",
+        }
+    ]
+
+    const programacaoDeAplicativos = [
+        {
+            title: "Atividade Express",
+            description: "ababa",
+            imgUrl: fotoExpress,
+            trimestre: "terceiro",
+            link: "https://github.com/leiticiasf/primeiroPrograma.git"
         }
     ]
 
@@ -169,6 +196,10 @@ return(
                 <Nav.Item>
                     <Nav.Link eventKey="sa" > SA </Nav.Link>
                 </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="aplicativos" > Programação de Aplicativos </Nav.Link>
+                </Nav.Item>
+                
               
             </Nav>
             <Tab.Content>
@@ -229,6 +260,19 @@ return(
                                     <DevCards 
                                     key={index}
                                     {...ims} />
+                                )
+                            )
+                        }
+                    </Row>
+                </Tab.Pane>
+
+                <Tab.Pane eventKey="aplicativos">
+                    <Row>
+                        {selectedCategory === "aplicativos" &&
+                        aplicativos.filter(aplicativos => aplicativos.trimestre === selectedTrimestre).map((aplicativos, index) => (
+                                    <DevCards 
+                                    key={index}
+                                    {...aplicativos} />
                                 )
                             )
                         }
