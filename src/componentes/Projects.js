@@ -19,10 +19,15 @@
  import fotoMonopoly from "../assets/matematicaImg/Tabuleiro.png";
  import fotoCorcovado from "../assets/humanasImg/corcovado.jpg";
  import fotoGru from "../assets/humanasImg/gru.jpg";
- import fotoRedacao from "../assets/linguagensImg/redacao.png";
+ import fotoRedacao from "../assets/linguagensImg/red1.png";
  import fotoPoema from "../assets/linguagensImg/gatolendo.jpg";
  import fotoMaquete from "../assets/linguagensImg/maquete.jpg";
-
+ import fotoFria from "../assets/humanasImg/guerra.jpg";
+ import fotoOperacao from "../assets/humanasImg/condor.jpg";
+ import fotoIA from "../assets/humanasImg/eba.jpg"; 
+ import foto3Red from "../assets/linguagensImg/redacao.png";
+ import fotoModer from "../assets/linguagensImg/moderno.jpg";
+ import fotoLittle from "../assets/linguagensImg/lirou.jpg";
 
 
 
@@ -97,6 +102,13 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
             link: "https://www.canva.com/design/DAGHQmgqtf0/RqO-sbbRCxF4B1pHaVDjjA/edit?utm_content=DAGHQmgqtf0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",   
             imgUrl: fotoXilocaina,
             trimestre: "segundo"
+        },
+        {
+            title: "Desequilíbrio Ambiental",
+            description: "Fizemos uma apresentação sobre um desequilíbirio ambiental específico, no caso gestão de resíduos sólidos. Atendemos a C5- H27 e H28.",
+            link: "https://www.canva.com/design/DAGQcwJcvZY/ICnsvBC_3wJlzFF3EBIOGg/edit?utm_content=DAGQcwJcvZY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",   
+            imgUrl: fotoXilocaina,
+            trimestre: "terceiro"
         }
     ];
 
@@ -140,7 +152,33 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
             link: "https://www.canva.com/design/DAGHFl5qYiI/YgnHFi7nQdiZsi0EWfXUAw/edit?utm_content=DAGHFl5qYiI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
             imgUrl: fotoGru,
             trimestre: "segundo",
+            
+        },
+        {
+            title: "Guerra Fria",
+            description: "Nessa atividade realizamos uma pesquisa e construímos uma apresentação no Canva para explicar a complexidade de conflitos, disputas, guerras, acordos e sentimentos relacionados à Guerra Fria. Escolhemos um personagem para representar o lado americano e um segundo personagem para representar o lado soviético. Então fizemos uma apresentação de acordo com os requisitos. Essa foi uma atividade interessante de fazer, desde a construção da apresentação até a pesquisa.  ",
+            link: "https://www.canva.com/design/DAGSPifDgp0/CdqFlXyXCOzvaKEnyeyUBA/edit?utm_content=DAGSPifDgp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            imgUrl: fotoFria,
+            trimestre: "terceiro",
+            
+        },
+        {
+            title: "Operação Condor",
+            description: "Nessa atividade nós selecionamos um evento ocorrido durante o período da Ditadura Militar, em especial durante os anos de 1967 a 1978 e então montamos uma apresentação para a turma. Foi uma tarefa tranquila de fazer, tivemos dificuldades em encontrar alguns dados mas nada que impossibilitasse de ser feito.",
+            link: "https://www.canva.com/design/DAGU3rrrrs0/mQS0XXCcqQPdlwr9t6sS_g/edit?utm_content=DAGU3rrrrs0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            imgUrl: fotoOperacao,
+            trimestre: "terceiro",
+            
+        }, 
+        {
+            title: "Plurall",
+            description: "Após a realização de uma prova gerada por IA, nós também tivemos que fazer uma prova gerada por uma IA e analisar as questões e respostas geradas por ela. Foi algo agradável de fazer e super tranquilo. ",
+            link: "https://docs.google.com/document/d/1qZ1_NotVqrnV2sBp8zj7xuRi7kNK31uC9eJ5bzO49cs/edit?usp=sharing",
+            imgUrl: fotoIA,
+            trimestre: "terceiro",
+            
         }
+    
     
     ];
 
@@ -174,7 +212,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
         },
         {
             title: "Redação Online",
-            description: "Nota da redação online deste trimestre. Tema: Valorização dos profissionais da educação básica pública e seu impacto na qualidade do ensino. Clique para abrir a imagem em uma nova guia e visualizá-la melhor.",
+            description: "Nota da redação online deste trimestre. Tema: Valorização dos profissionais da educação básica pública e seu impacto na qualidade do ensino.",
             imgUrl: fotoRedacao,
             link: "https://lh3.googleusercontent.com/drive-storage/AJQWtBN33oRgxYEzC8nE_H_wKDxY2TRzMemJiTJJkeSar9v9cTCN9fznfwJh_9P3t51PXkryidSPEfUhjL2LVa4bcPLj9OUY8IX3kjlILFq1J06qeQ=w1920-h912",
             trimestre: "segundo"   
@@ -191,6 +229,26 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
             description: "Maquete feita para ilustrar uma cena do livro Solitária. A cena em questão seria supostamente quando a mãe de Mabel morre dormindo ao lado de sua filha e neta. ",
             imgUrl: fotoMaquete,
             trimestre: "segundo"
+        },
+        {
+            title: "3 Aplicação Redação",
+            description: "Terceira aplicação da redação online. Tema: Medidas para combater a má alimentação entre os jovens no Brasil. Fiquei feliz com essa nota <3. ",
+            imgUrl: foto3Red,
+            trimestre: "terceiro"
+        },
+        {
+            title: "Revista Literária Final",
+            description: "Trabalhamos as obras literárias do vestibular da UFSC. Para além de estarmos familizarizados com as obras do vestibular, que seja proporcionado o contato com a leitura, além de trabalharmos a interpretação textual, o estímulo ao senso crítico e habilidades de argumentação e produção de texto.",
+            imgUrl: fotoModer,
+            link: "https://www.canva.com/design/DAGCnlXR5dg/22xYHyZ4qTf1vJ_CS4onbg/edit?utm_content=DAGCnlXR5dg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            trimestre: "terceiro"
+        },
+        {
+            title: "Little Titicia",
+            description: "๋࣭ ⭑⚝",
+            imgUrl: fotoLittle,
+            link: "https://www.canva.com/design/DAGCnlXR5dg/22xYHyZ4qTf1vJ_CS4onbg/edit?utm_content=DAGCnlXR5dg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            trimestre: "terceiro"
         }
     ]
 

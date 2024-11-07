@@ -17,6 +17,8 @@
  import fotoBiblio from "../assets/tecnicoImg/cato.jpg";
  import fotoPg from "../assets/tecnicoImg/elephant.jpg";
  import fotoExpress from "../assets/tecnicoImg/express.jpg";
+ import fotoAtv2 from "../assets/tecnicoImg/programa.jpg";
+
 
 export const DevProjects = () => { /* Parte Desenvolvimento de Sistemas*/
 
@@ -149,11 +151,18 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
         }
     ]
 
-    const programacaoDeAplicativos = [
+    const aplicativos = [
         {
             title: "Atividade Express",
             description: "ababa",
             imgUrl: fotoExpress,
+            trimestre: "terceiro",
+            link: "https://github.com/leiticiasf/projetonode.git"
+        },
+        {
+            title: "Atividade 2",
+            description: "habilidades",
+            imgUrl: fotoAtv2,
             trimestre: "terceiro",
             link: "https://github.com/leiticiasf/primeiroPrograma.git"
         }
