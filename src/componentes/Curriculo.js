@@ -19,6 +19,11 @@ export const Curriculo = () => {
             <br/>
             <img src={downloadPng} onClick={handleDownload} className='download'></img>
             </div>
+            <br/>            <br/>
+            <br/>
+            <br/>
+
+
         </div>
     )
 }

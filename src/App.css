@@ -608,9 +608,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   }
 }
 
-#aa{
-  width: 40%;
+#certificado{
+  width: 130%;
   height: auto;
+  margin-right: 10%;
+  align-items: center;
+}
+#certificado2{
+  width: 130%;
+  height: auto; 
+  margin-left: 50%;
+
 }
 
-/* configurando imagens do tecnico */
+.ppe-bx{
+  background: #254d61;
+  border-radius: 65px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+
+}
+
+

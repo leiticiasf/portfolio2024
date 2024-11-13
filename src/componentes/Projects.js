@@ -28,6 +28,10 @@
  import foto3Red from "../assets/linguagensImg/redacao.png";
  import fotoModer from "../assets/linguagensImg/moderno.jpg";
  import fotoLittle from "../assets/linguagensImg/lirou.jpg";
+ import fotoJujuba from "../assets/matematicaImg/bubble.jpg";
+ import fotoAmbiente from "../assets/naturezaImg/aa.jpg";
+ import fotoRadio from "../assets/naturezaImg/radio.jpg";
+
 
 
 
@@ -107,7 +111,14 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
             title: "Desequilíbrio Ambiental",
             description: "Fizemos uma apresentação sobre um desequilíbirio ambiental específico, no caso gestão de resíduos sólidos. Atendemos a C5- H27 e H28.",
             link: "https://www.canva.com/design/DAGQcwJcvZY/ICnsvBC_3wJlzFF3EBIOGg/edit?utm_content=DAGQcwJcvZY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",   
-            imgUrl: fotoXilocaina,
+            imgUrl: fotoAmbiente,
+            trimestre: "terceiro"
+        },
+        {
+            title: "Radioatividade",
+            description: "Fizemos uma apresentação sobre o enriquecimento do urânio, com: como ocorre, etapas, países entre outros. Atendendo a Competência 5 e Habilidades 24, 25, 26, H27 e H28.  Gostei de montar o tema.  ",
+            link: "https://www.canva.com/design/DAGPJMo6ns8/InT-KOJvpV-I3wZOWEKvYQ/edit?utm_content=DAGPJMo6ns8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",   
+            imgUrl: fotoRadio,
             trimestre: "terceiro"
         }
     ];
@@ -276,6 +287,13 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
             imgUrl: fotoMonopoly,
             link: "https://www.canva.com/design/DAGJ_FQZHBM/P2Fzx4CF7fq-YkgKH5zlDg/edit?utm_content=DAGJ_FQZHBM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton&authuser=0",
             trimestre: "segundo"
+        },
+        {
+            title: "Atividade Jujubinha",
+            description: "Esta atividade pedia que fizéssemos figuras geométricas a partir de jujubas e palitos de madeira, onde as jujubas seriam os vértices e os palitos as arestas. Foi bem legal de fazer e divertido, além de que, comemos todas as jujubas restantes. ",
+            imgUrl: fotoJujuba,
+            link: "https://www.canva.com/design/DAGVzGB8Y7I/dE66bd3JGC6S4tanJIpeJw/edit?utm_content=DAGVzGB8Y7I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton&authuser=0",
+            trimestre: "terceiro"
         }
     ]
 
