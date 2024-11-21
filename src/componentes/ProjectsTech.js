@@ -18,6 +18,7 @@
  import fotoPg from "../assets/tecnicoImg/elephant.jpg";
  import fotoExpress from "../assets/tecnicoImg/express.jpg";
  import fotoAtv2 from "../assets/tecnicoImg/programa.jpg";
+ import fotoTeste from "../assets/tecnicoImg/teste.jpg";
 
 
 export const DevProjects = () => { /* Parte Desenvolvimento de Sistemas*/
@@ -154,7 +155,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
     const aplicativos = [
         {
             title: "Atividade Express",
-            description: "ababa",
+            description: "Projeto feito em express. ",
             imgUrl: fotoExpress,
             trimestre: "terceiro",
             link: "https://github.com/leiticiasf/projetonode.git"
@@ -165,6 +166,15 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
             imgUrl: fotoAtv2,
             trimestre: "terceiro",
             link: "https://github.com/leiticiasf/primeiroPrograma.git"
+        }
+    ]
+    const tds = [
+        {
+            title: "Teste de Sistemas",
+            description: "Apresentação com o que aprendemos no trimestre.",
+            imgUrl: fotoTeste,
+            trimestre: "terceiro",
+            link: "https://www.canva.com/design/DAGWXvM20RQ/0xdRNeGixxetd4gV6i78rw/edit"
         }
     ]
 
@@ -207,6 +217,9 @@ return(
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link eventKey="aplicativos" > Programação de Aplicativos </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="tds" > Teste de Sistemas </Nav.Link>
                 </Nav.Item>
                 
               
@@ -287,7 +300,17 @@ return(
                         }
                     </Row>
                 </Tab.Pane>
-
+                <Tab.Pane eventKey="tds">
+                   <Row>
+                    {selectedCategory === "tds" &&
+                          tds.filter(tds => tds.trimestre === selectedTrimestre).map((tds, index) => (
+                               <DevCards
+                                key={index}
+                                {...tds} />
+                            ))}
+                    
+                   </Row>
+                </Tab.Pane>
             
             </Tab.Content>
             </Tab.Container>
