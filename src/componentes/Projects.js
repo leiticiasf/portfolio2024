@@ -235,12 +235,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
             link: "https://docs.google.com/document/d/1v20WhbjqvW36DMxb-p04CLDy89bZMcWdjCESfj87gNc/edit?usp=sharing",
             trimestre: "segundo"
         },
-        {
-            title: "Maquete",
-            description: "Maquete feita para ilustrar uma cena do livro Solitária. A cena em questão seria supostamente quando a mãe de Mabel morre dormindo ao lado de sua filha e neta. ",
-            imgUrl: fotoMaquete,
-            trimestre: "segundo"
-        },
+
         {
             title: "3 Aplicação Redação",
             description: "Terceira aplicação da redação online. Tema: Medidas para combater a má alimentação entre os jovens no Brasil. Fiquei feliz com essa nota <3. ",
@@ -249,7 +244,7 @@ const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro", "segundo"
         },
         {
             title: "Revista Literária Final",
-            description: "Trabalhamos as obras literárias do vestibular da UFSC. Para além de estarmos familizarizados com as obras do vestibular, que seja proporcionado o contato com a leitura, além de trabalharmos a interpretação textual, o estímulo ao senso crítico e habilidades de argumentação e produção de texto.",
+            description: "Neste trimestre incluímos um vídeo feito com a música 'Enquanto Seu Lobo Não Vem', para explorarmos a época do Tropicalismo. Além disso, também incluímos um painel de uma figura importante do Modernismo, Carlos Drummond de Andrade.",
             imgUrl: fotoModer,
             link: "https://www.canva.com/design/DAGCnlXR5dg/22xYHyZ4qTf1vJ_CS4onbg/edit?utm_content=DAGCnlXR5dg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
             trimestre: "terceiro"
