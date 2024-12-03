@@ -53,7 +53,6 @@ export const Banner = () => {
                        <h1>Olá, eu sou a <span className="wrap">{text}</span></h1>
                        <p>Me chamo Letícia, tenho 17 anos e estou no 3° ano do Ensino Médio cursando o Técnico na instituição de ensino Escola Sesi.</p>
                        <p> Meus hobbies envolvem desenhar, ouvir música, cozinhar (principalmente confeitaria), tocar guitarra e jogar volêi.</p>
-                        <button onClick={() => console.log('connect')}>Fale comigo!< ArrowRightCircle size={25}/></button>
                     </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img src={headerImg} alt="Header img" />

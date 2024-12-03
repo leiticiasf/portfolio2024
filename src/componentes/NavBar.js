@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import github from '../assets/img/GitHubIcon.svg';
 import linkedin from '../assets/img/LinkedInIcon.png';
-import pinterest from '../assets/img/PinterestIcon.svg';
 import desenhoLeticia from '../assets/photos/eu.png';
 
 export const NavBar = () => {
@@ -53,7 +52,6 @@ export const NavBar = () => {
             <div className="social-icon">
               <a href='https://github.com/leiticiasf'><img src={github} alt="github" /> </a>
               <a href='https://www.linkedin.com/in/let%C3%ADcia-soares-ferreira-b763a42b8/'><img src={linkedin} alt="linkedin" /> </a>
-              <a href='#'><img src={pinterest} alt="pinterest" /> </a>
             </div>
           </span>
         </Navbar.Collapse>
